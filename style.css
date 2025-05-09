@@ -1,0 +1,207 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1d1d1d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #aa00ff; /* Purple */
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #FF6600; /* Orange hover effect */
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  background-color: #333;
+  padding: 50px;
+}
+
+h1 {
+  color: #aa00ff; /* Purple */
+  font-size: 48px;
+  text-shadow: 0px 0px 10px #FF6600, 0px 0px 20px #FF6600, 0px 0px 30px #FF6600;
+}
+
+.launch-info {
+  color: #FF6600; /* Orange */
+  font-size: 18px;
+  text-shadow: 0px 0px 5px #FF6600, 0px 0px 10px #FF6600;
+}
+
+/* Info Section */
+#info {
+  padding: 50px;
+  background-color: #2a2a2a;
+  text-align: center;
+}
+
+#info h2 {
+  color: #aa00ff; /* Purple */
+}
+
+#info p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Code Box Styling */
+#in-game-code .code-box {
+  font-size: 24px;
+  font-weight: bold;
+  color: #aa00ff;
+  background-color: #333;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Owners Section */
+#owners {
+  text-align: center;
+  padding: 50px;
+  background-color: #333;
+}
+
+#owners h2 {
+  color: #aa00ff; /* Purple */
+}
+
+#owners div {
+  color: #FF6600; /* Orange */
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#owners span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  background-color: #2a2a2a;
+  padding: 50px;
+}
+
+#contact h2 {
+  color: #aa00ff;
+}
+
+#contact p {
+  font-size: 18px;
+  color: #fff;
+}
+
+#contact .contact-info {
+  font-size: 16px;
+  color: #FF6600;
+  margin-top: 20px;
+}
+
+#contact .contact-info a {
+  color: #FF6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact .contact-info a:hover {
+  color: #aa00ff;
+}
+
+/* Recent Projects Section */
+#recent-projects {
+  background-color: #333;
+  padding: 50px;
+  text-align: center;
+}
+
+#recent-projects h2 {
+  color: #aa00ff;
+}
+
+.project-box {
+  display: inline-block;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.project-box:hover {
+  background-color: #aa00ff;
+  color: #333;
+}
+
+/* Glow Effect for Text */
+.glow-text {
+  color: #FF6600; /* Orange */
+  text-shadow: 0px 0px 5px #FF6600, 0px 0px 10px #FF6600, 0px 0px 15px #FF6600;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  color: #FF6600; /* Orange */
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #333;
+}
+
+footer a {
+  color: #FF6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #aa00ff;
+}
+
+/* Florida Time Section */
+#florida-time-container {
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#florida-time {
+  color: #FF6600;
+  font-weight: bold;
+  font-size: 22px;
+}
