@@ -4,8 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nova Web Development</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="https://media.discordapp.net/attachments/1353767159062597725/1370518834305437738/Screenshot_2025-05-09_14.33.52.png?ex=681fcaa1&is=681e7921&hm=1b16703c70984998dc6858e1ed5d083d04cbe2fad8f5ede8c3f07e90ed9c00e9&=&format=webp&quality=lossless"type="image/webp">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      color: #aa00ff;
+    }
+
+    nav {
+      background-color: #111;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #aa00ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    .glow-text {
+      text-shadow: 0 0 10px #aa00ff, 0 0 20px #aa00ff, 0 0 30px #aa00ff;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .project-box {
+      border: 1px solid #aa00ff;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    footer {
+      background-color: #111;
+      color: #aa00ff;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      margin-top: 50px;
+    }
+
+    #florida-time-container {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,19 +96,19 @@
 
   <!-- Header -->
   <header id="home">
-    <h1>Nova Web Development</h1>
-    <p class="launch-info glow-text">Simple. Yours.</p>
+    <h1 class="glow-text">Nova Web Development</h1>
+    <p class="glow-text">Simple. Yours.</p>
   </header>
 
   <!-- Info Section -->
   <section id="info">
-    <h2>About Nova</h2>
-    <p class="about-text">Nova Web Development is all about providing you with clean, vibrant, and user-friendly websites tailored to your needs. Whether you're looking for a personal project or a larger-scale site, we've got you covered.</p>
+    <h2 class="glow-text">About Nova</h2>
+    <p>Nova Web Development is all about providing you with clean, vibrant, and user-friendly websites tailored to your needs. Whether you're looking for a personal project or a larger-scale site, we've got you covered.</p>
   </section>
 
   <!-- Recent Projects Section -->
   <section id="recent-projects">
-    <h2>Recent Projects</h2>
+    <h2 class="glow-text">Recent Projects</h2>
     <div class="project-box glow-text">
       <h3>Florida State Roleplay</h3>
       <p>This server is designed to offer a realistic and enjoyable roleplay experience. We pride ourselves on professionalism, community, and creativity.</p>
@@ -43,7 +117,7 @@
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact Me</h2>
+    <h2 class="glow-text">Contact Me</h2>
     <p>If you want to get in touch, here's how you can reach me:</p>
     <div class="contact-info">
       <p>Discord - Inman.xfr</p>
@@ -57,4 +131,5 @@
     Powered by Nova Web Development
   </footer>
 
- 
+</body>
+</html>
