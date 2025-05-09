@@ -191,17 +191,3 @@ footer a {
 footer a:hover {
   color: #aa00ff;
 }
-
-/* Florida Time Section */
-#florida-time-container {
-  font-size: 18px;
-  color: #fff;
-  text-align: center;
-  margin-top: 20px;
-}
-
-#florida-time {
-  color: #FF6600;
-  font-weight: bold;
-  font-size: 22px;
-}
