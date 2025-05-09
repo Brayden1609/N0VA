@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nova Web Development</title>
-<link rel="icon" href="https://media.discordapp.net/attachments/1353767159062597725/1370532135819022386/image.png?ex=681fd704&is=681e8584&hm=1558a2851a5de5df5b31019c9136ff7101b17dd3f210ac088ca974c1d1ca2fb3&=&format=webp&quality=lossless"type="image/webp">   
-  :root {
+<link rel="icon" href="https://media.discordapp.net/attachments/1353767159062597725/1370532135819022386/image.png?ex=681fd704&is=681e8584&hm=1558a2851a5de5df5b31019c9136ff7101b17dd3f210ac088ca974c1d1ca2fb3&=&format=webp&quality=lossless" type="image/webp">
+  <style>
+    :root {
       --main-color: #aa00ff;
       --bg-color: #000;
       --text-color: #fff;
@@ -35,6 +36,11 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
     }
 
     header {
@@ -67,11 +73,17 @@
       padding: 25px;
       margin: 20px 0;
       box-shadow: 0 0 10px var(--main-color);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .contact-info {
-      margin-top: 20px;
-      font-size: 1.1em;
+    .project-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
+    }
+
+    .contact-info p:hover {
+      text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
+      transition: 0.3s ease;
     }
 
     footer {
@@ -81,10 +93,6 @@
       padding: 30px 10px;
       margin-top: 40px;
       font-size: 0.95em;
-    }
-
-    #florida-time {
-      font-weight: bold;
     }
   </style>
 </head>
