@@ -7,39 +7,57 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo">Nova</span>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <header id="home">
-    <h1 class="glow-text">Nova Web Development</h1>
-    <p>Your web vision, brought to life in clean code and sleek design.</p>
+  <!-- Hero Section -->
+  <header id="home" class="hero-section">
+    <h1 class="hero-title glow-text">Nova Web Development</h1>
+    <p class="hero-subtitle">Custom roleplay systems. Sleek design. Real results.</p>
   </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-box">
-      <h3><a href="https://fsrp06-seven.vercel.app/#home" target="_blank">Florida State Roleplay</a></h3>
-    </div>
-    <div class="project-box">
-      <h3><a href="https://gsrp.vercel.app/" target="_blank">Georgia State Roleplay</a></h3>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <h3><a href="https://fsrp06-seven.vercel.app/#home" target="_blank">Florida State Roleplay</a></h3>
+        <p>
+          A modern roleplay server featuring custom ELS, department systems, bots, and UI tailored for immersive RP.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3><a href=https://gsrp.vercel.app/" target="_blank">Georgia State Roleplay</a></h3>
+        <p>
+          High-performance roleplay setup with custom-built infrastructure, sleek web design, and responsive support tools.
+        </p>
+      </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-info">
-      <p>Email: novawebdev@example.com</p>
-      <p>Discord: @NovaDev</p>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Email: <a href="mailto:novawebdev@example.com">novawebdev@example.com</a></p>
+    <p>Discord: <code>@NovaDev</code></p>
   </section>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="footer">
     <p>&copy; 2025 Nova Web Development. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
