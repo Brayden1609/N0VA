@@ -1,156 +1,83 @@
-/* Background GIF */
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
 }
 
-.background {
+.background-gif {
+  background: url('https://media.giphy.com/media/3nBDc0nCyABa0dMI3v/giphy.gif') center center / cover no-repeat;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('https://media.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif') center center / cover no-repeat;
   z-index: -1;
-  opacity: 0.15;
-  filter: brightness(0.4) contrast(1.2);
+  opacity: 0.7; /* adjust as needed */
 }
 
-/* Neon glow effects */
-.glow {
-  color: #00ff88;
-  text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 20px #00ff88;
-}
-
-.hover-glow:hover {
-  color: #00ff88;
+.content {
+  z-index: 2;
+  position: relative;
+  color: #00ff88; /* neon green text */
   text-shadow: 0 0 10px #00ff88;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent so gif still visible */
+  height: 100vh;
+  overflow-y: auto;
+}
+/* Headings */
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
 }
 
-/* Layout */
-header, footer, .section {
-  padding: 2rem;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  margin: 1rem auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px #111;
+p, li {
+  font-family: 'Segoe UI', sans-serif;
+  color: #e0ffe0;
+  text-shadow: 0 0 3px #00ff88;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0.2rem;
-}
-
-.tagline {
-  font-size: 1.2rem;
-  color: #ccc;
-}
-
-.project-list {
-  list-style: none;
-  padding: 0;
-}
-
-.project-list li {
-  margin: 0.5rem 0;
-  font-weight: bold;
-}
-
+/* Discord Button */
 .discord-btn {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #00ff88;
+  padding: 14px 30px;
+  background: linear-gradient(45deg, #00ff88, #009f60);
   color: #000;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 1.1em;
   border: none;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
+  box-shadow: 0 0 15px #00ff88, 0 0 25px #00ff88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .discord-btn:hover {
-  background-color: #00ffaa;
-  box-shadow: 0 0 15px #00ff88;
-}
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Background GIF */
-.background {
-  background: url('https://media.giphy.com/media/3nBDc0nCyABa0dMI3v/giphy.gif') no-repeat center center fixed;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  opacity: 0.2;
-}
-
-/* Content Wrapper */
-.content {
-  color: #fff;
-  padding: 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(0, 0, 0, 0.7);
-  min-height: 100vh;
-}
-
-/* Neon Glow Text */
-.glow {
-  color: #0f0;
-  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0;
-}
-
-.hover-glow:hover {
-  text-shadow: 0 0 10px #f00, 0 0 20px #f00;
-}
-
-/* Buttons */
-.discord-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  margin-top: 1rem;
-  background-color: #000;
-  color: #0f0;
-  border: 2px solid #0f0;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
-}
-
-.discord-btn:hover {
-  background-color: #0f0;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ff88, 0 0 35px #00ff88;
+  background: linear-gradient(45deg, #00cc6a, #007f50);
   color: #000;
-}
-
-/* Footer */
-footer {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-/* Lists */
-.project-list, .section ul {
+}.project-list {
   list-style: none;
+  padding-left: 0;
   margin-top: 1rem;
 }
 
-.section {
-  margin: 2rem 0;
+.project-link {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ff88, 0 0 16px #00ff88;
 }
