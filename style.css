@@ -2,14 +2,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0d0d0d;
+  background: url('https://media.giphy.com/media/l0MYB8Ory7Hqefo9a/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
   color: white;
 }
 
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 100vh;
+}
+
 header {
-  background-color: #1a1a1a;
-  padding: 2.5rem;
   text-align: center;
+  padding: 2.5rem;
   border-bottom: 2px solid #ff0000;
 }
 
@@ -34,25 +39,44 @@ header {
   max-width: 800px;
   margin: 0 auto;
   color: #ccc;
-  font-size: 1rem;
 }
 
-.services,
-.process {
+.services {
   list-style: none;
-  padding-left: 0;
-  max-width: 800px;
+  padding: 0;
+  max-width: 700px;
   margin: 1rem auto;
   text-align: left;
 }
 
-.services li,
-.process li {
-  padding: 0.5rem 0;
+.services li {
+  padding: 0.5rem;
   border-left: 4px solid #00ff73;
-  margin-bottom: 0.5rem;
-  padding-left: 1rem;
   background-color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #111;
+  border: 1px solid #00ff73;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 0 10px #00ff73;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
 }
 
 .discord-btn {
@@ -64,20 +88,20 @@ header {
   text-decoration: none;
   font-weight: bold;
   border-radius: 6px;
-  box-shadow: 0 0 10px #00ff73, 0 0 20px #00ff73;
+  box-shadow: 0 0 10px #00ff73;
   transition: all 0.3s ease;
 }
 
 .discord-btn:hover {
   background: #00cc5a;
-  box-shadow: 0 0 15px #00ff73, 0 0 30px #00ff73;
+  box-shadow: 0 0 20px #00ff73;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  background: #1a1a1a;
   font-size: 0.9rem;
+  background: #1a1a1a;
   border-top: 2px solid #ff0000;
   color: #888;
 }
