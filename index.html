@@ -2,142 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nova Web Development</title>
-<link rel="icon" href="https://media.discordapp.net/attachments/1353767159062597725/1370532135819022386/image.png?ex=681fd704&is=681e8584&hm=1558a2851a5de5df5b31019c9136ff7101b17dd3f210ac088ca974c1d1ca2fb3&=&format=webp&quality=lossless" type="image/webp">
-  <style>
-    :root {
-      --main-color: #aa00ff;
-      --bg-color: #000;
-      --text-color: #fff;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-color);
-      color: var(--main-color);
-      line-height: 1.6;
-    }
-
-    nav {
-      background: #111;
-      padding: 15px;
-      text-align: center;
-    }
-
-    nav a {
-      color: var(--main-color);
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    nav a:hover {
-      text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    }
-
-    header {
-      padding: 60px 20px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 3.5em;
-      text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #ccc;
-    }
-
-    section {
-      padding: 50px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .project-box {
-      background-color: #111;
-      border: 2px solid var(--main-color);
-      border-radius: 10px;
-      padding: 25px;
-      margin: 20px 0;
-      box-shadow: 0 0 10px var(--main-color);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
-    }
-
-    .contact-info p:hover {
-      text-shadow: 0 0 10px var(--main-color), 0 0 20px var(--main-color);
-      transition: 0.3s ease;
-    }
-
-    footer {
-      background-color: #111;
-      color: var(--main-color);
-      text-align: center;
-      padding: 30px 10px;
-      margin-top: 40px;
-      font-size: 0.95em;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>N0VA Development</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header id="home">
-    <h1>NOVA</h1>
-    <p>Simple. Yours.</p>
+  <div class="stars"></div>
+  
+  <header>
+    <h1>N0VA Web Development</h1>
+    <p class="tagline">Redefined. Powerful. Yours.</p>
   </header>
 
-  <section id="about">
-    <h2>About Nova</h2>
-    <p>Nova Web Development is a solo-run service dedicated to creating clean, vibrant, and tailored websites. Whether it's a game server, portfolio, or landing page — it's your vision, brought to life.</p>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="#projects">Recent Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="#join">Join the Team</a></li>
+    </ul>
+  </nav>
 
   <section id="projects">
     <h2>Recent Projects</h2>
-    <div class="project-box">
+    <div class="project-card">
       <h3>Florida State Roleplay</h3>
-      <p>This server is designed to offer a realistic and enjoyable roleplay experience. We pride ourselves on professionalism, community, and creativity.</p>
+      <p>A premium roleplay server built with immersive detail and custom tech.</p>
+      <a href="https://fsrp06-seven.vercel.app/" target="_blank" class="glow-btn">View Project</a>
     </div>
   </section>
 
   <section id="contact">
-    <h2>Contact Me</h2>
-    <p>You can reach out to me via:</p>
-    <div class="contact-info">
-      <p>Discord: <strong>Inman.xfr</strong></p>
-      <p>Email: <strong>Inmanbrayden929@gmail.com</strong></p>
-    </div>
-    <p style="margin-top: 25px;">Join the team — or start something new. Let's build it together.</p>
+    <h2>Start a Project</h2>
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Project Description..." required></textarea>
+      <button type="submit" class="glow-btn">Send</button>
+    </form>
+  </section>
+
+  <section id="join">
+    <h2>Join the Team</h2>
+    <form action="#" method="POST">
+      <input type="text" name="username" placeholder="Your Discord Username" required />
+      <input type="text" name="skills" placeholder="Your Skills (e.g., Web Dev, UI/UX)" required />
+      <textarea name="reason" rows="4" placeholder="Why do you want to join N0VA?" required></textarea>
+      <button type="submit" class="glow-btn">Apply</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2025 Nova Web Development | Made by Inman.xfr<br />
-    Powered by Nova — Clean Code. Clean Look.
+    <p>Made by Inman.xfr • All Rights Reserved™</p>
+    <p>Powered by N0VA Development</p>
   </footer>
-
 </body>
 </html>
