@@ -1,135 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nova Web Development</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000000;
-      color: #aa00ff;
-    }
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    nav {
-      background-color: #111;
-      padding: 10px;
-      text-align: center;
-    }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
+  color: #aa00ff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
 
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
+/* Navigation */
+nav {
+  background-color: #111;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(170, 0, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
 
-    nav ul li a {
-      color: #aa00ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav ul li a {
+  color: #aa00ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-    header {
-      text-align: center;
-      padding: 50px 20px 20px 20px;
-    }
+nav ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #aa00ff;
+}
 
-    header h1 {
-      font-size: 3em;
-    }
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(180deg, #000, #1a001f);
+}
 
-    .glow-text {
-      text-shadow: 0 0 10px #aa00ff, 0 0 20px #aa00ff, 0 0 30px #aa00ff;
-    }
+header h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 15px #aa00ff;
+}
 
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
+header p {
+  font-size: 1.2rem;
+  color: #cc66ff;
+}
 
-    .project-box {
-      border: 1px solid #aa00ff;
-      border-radius: 10px;
-      padding: 20px;
-      max-width: 600px;
-      margin: 20px auto;
-    }
+/* Section Styles */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
 
-    .contact-info p {
-      margin: 5px 0;
-    }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #aa00ff;
+}
 
-    footer {
-      background-color: #111;
-      color: #aa00ff;
-      text-align: center;
-      padding: 20px;
-      font-size: 16px;
-      margin-top: 50px;
-    }
+/* Project Box */
+.project-box {
+  background-color: rgba(170, 0, 255, 0.05);
+  padding: 30px;
+  border: 1px solid #aa00ff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(170, 0, 255, 0.2);
+  margin: 20px 0;
+}
 
-    #florida-time-container {
-      text-align: center;
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
+/* Contact Info */
+.contact-info p {
+  margin: 8px 0;
+  color: #dddddd;
+}
 
-<body>
+/* Footer */
+footer {
+  background-color: #111;
+  color: #aa00ff;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(170, 0, 255, 0.2);
+  margin-top: 40px;
+}
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#info">Info</a></li>
-      <li><a href="#recent-projects">Recent Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header id="home">
-    <h1 class="glow-text">Nova Web Development</h1>
-    <p class="glow-text">Simple. Yours.</p>
-  </header>
-
-  <!-- Info Section -->
-  <section id="info">
-    <h2 class="glow-text">About Nova</h2>
-    <p>Nova Web Development is all about providing you with clean, vibrant, and user-friendly websites tailored to your needs. Whether you're looking for a personal project or a larger-scale site, we've got you covered.</p>
-  </section>
-
-  <!-- Recent Projects Section -->
-  <section id="recent-projects">
-    <h2 class="glow-text">Recent Projects</h2>
-    <div class="project-box glow-text">
-      <h3>Florida State Roleplay</h3>
-      <p>This server is designed to offer a realistic and enjoyable roleplay experience. We pride ourselves on professionalism, community, and creativity.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2 class="glow-text">Contact Me</h2>
-    <p>If you want to get in touch, here's how you can reach me:</p>
-    <div class="contact-info">
-      <p>Discord - Inman.xfr</p>
-      <p>Email - Inmanbrayden929@gmail.com</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    Made by Inman.xfr | Nova Web Development All Rights Reserved™<br>
-  </footer>
-
-
-
-</body>
-</html>
+/* Optional: Animated Glow */
+.glow-text {
+  text-shadow: 0 0 10px #aa00ff, 0 0 20px #aa00ff, 0 0 30px #aa00ff;
+}
