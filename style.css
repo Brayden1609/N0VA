@@ -80,3 +80,77 @@ h1 {
   background-color: #00ffaa;
   box-shadow: 0 0 15px #00ff88;
 }
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background GIF */
+.background {
+  background: url('https://media.giphy.com/media/3nBDc0nCyABa0dMI3v/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* Content Wrapper */
+.content {
+  color: #fff;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+}
+
+/* Neon Glow Text */
+.glow {
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.hover-glow:hover {
+  text-shadow: 0 0 10px #f00, 0 0 20px #f00;
+}
+
+/* Buttons */
+.discord-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 1rem;
+  background-color: #000;
+  color: #0f0;
+  border: 2px solid #0f0;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.discord-btn:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Lists */
+.project-list, .section ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.section {
+  margin: 2rem 0;
+}
