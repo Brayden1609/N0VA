@@ -176,4 +176,54 @@ footer {
 .cta-button:hover {
   background-color: #00cc00;
 }
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+  }
 
+  header h1 {
+    font-size: 1.8rem;
+    padding: 10px 15px;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  .team-list li,
+  .pricing-option {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+
+  .discord-btn {
+    font-size: 1rem;
+    width: 90%;
+    padding: 10px 20px;
+    margin: 12px auto;
+    display: block;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .pricing-grid {
+    display: block;
+    padding: 0 15px;
+  }
+
+  .pricing-option {
+    margin-bottom: 20px;
+  }
+
+  .gif-overlay {
+    background-size: cover;
+    background-position: center;
+  }
+}
