@@ -11,18 +11,6 @@ body, html {
   color: #fff;
   overflow: hidden;
 }
-
-.background {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://media.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif') center center / cover no-repeat;
-  z-index: -1;
-  opacity: 0.15;
-  filter: brightness(0.7);
-}
-
 .container {
   position: relative;
   padding: 2rem;
