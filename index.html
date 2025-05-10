@@ -4,78 +4,44 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nova Web Development</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0d0d0d;
-      color: #e6e6e6;
-      line-height: 1.6;
-    }
+  <header id="home">
+    <h1 class="glow-text">Nova Web Development</h1>
+    <p>Your web vision, brought to life in clean code and sleek design.</p>
+  </header>
 
-    header {
-      background: linear-gradient(120deg, #1a1a1a, #330000);
-      padding: 80px 20px 40px;
-      text-align: center;
-      color: #ff4d4d;
-      box-shadow: 0 2px 10px #b30000;
-    }
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-box">
+      <h3>Site #1</h3>
+      <p>A responsive business website with a full backend and CMS integration.</p>
+    </div>
+    <div class="project-box">
+      <h3>Site #2</h3>
+      <p>Custom e-commerce front-end built for mobile-first experience.</p>
+    </div>
+  </section>
 
-    header h1 {
-      font-size: 3rem;
-      text-shadow: 0 0 15px #ff1a1a;
-    }
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: novawebdev@example.com</p>
+      <p>Discord: @NovaDev</p>
+    </div>
+  </section>
 
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #ff6666;
-    }
-
-    nav {
-      background: #1a1a1a;
-      padding: 15px 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      box-shadow: 0 2px 5px #111;
-    }
-
-    nav a {
-      color: #ff4d4d;
-      text-decoration: none;
-      font-weight: bold;
-      position: relative;
-      transition: 0.3s;
-    }
-
-    nav a::after {
-      content: "";
-      display: block;
-      height: 2px;
-      background: #ff4d4d;
-      transition: width 0.3s;
-      width: 0%;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-      text-align: center;
-    }
-
-    section h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #ff4d4d;
+  <footer>
+    <p>&copy; 2025 Nova Web Development. All rights reserved.</p>
+  </footer>
+</body>
+</html>
