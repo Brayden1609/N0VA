@@ -213,20 +213,6 @@ footer {
     padding: 10px;
   }
 
-  .pricing-grid {
-    display: block;
-    padding: 0 15px;
-  }
-
-  .pricing-option {
-    margin-bottom: 20px;
-  }
-
-  .gif-overlay {
-    background-size: cover;
-    background-position: center;
-  }
-}
 @media (max-width: 768px) {
   .pricing-grid {
     flex-direction: column;
