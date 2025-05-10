@@ -89,3 +89,23 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://media.giphy.com/media/IwAZ6dvvvaTtdI8SD5/giphy.gif') center center / cover no-repeat;
+  z-index: -1;
+  opacity: 0.25;
+  filter: brightness(0.6);
+}
