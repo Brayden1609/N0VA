@@ -260,3 +260,52 @@ footer {
     text-overflow: ellipsis;
   }
 }
+.services {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #f39c12;
+}
+
+.pricing-plan {
+  background-color: #34495e;
+  color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.pricing-plan h3 {
+  font-size: 1.8rem;
+  color: #f39c12;
+}
+
+.pricing-plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-plan ul li {
+  margin: 8px 0;
+}
+
+.pricing-plan p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
